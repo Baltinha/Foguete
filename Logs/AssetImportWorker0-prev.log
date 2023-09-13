@@ -1,0 +1,309 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.7f1 (24e8595d6d43) revision 2418777'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'pt' Physical Memory: 16270 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\Unity\Hub\Editor\2021.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/nomed/Documents/GitHub/GameJam-Narrativa/Foguete
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49685
+Successfully changed project path to: C:/Users/nomed/Documents/GitHub/GameJam-Narrativa/Foguete
+C:/Users/nomed/Documents/GitHub/GameJam-Narrativa/Foguete
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 64.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.7f1 (24e8595d6d43)
+[Subsystems] Discovering subsystems at path F:/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/nomed/Documents/GitHub/GameJam-Narrativa/Foguete/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'F:/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: F:/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002328 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 60.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.477 seconds
+Domain Reload Profiling:
+	ReloadAssembly (477ms)
+		BeginReloadAssembly (61ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (342ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (76ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (61ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004105 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\nomed\Documents\GitHub\GameJam-Narrativa\Foguete\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\nomed\Documents\GitHub\GameJam-Narrativa\Foguete\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Domain Reload Profiling:
+	ReloadAssembly (866ms)
+		BeginReloadAssembly (210ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (133ms)
+		EndReloadAssembly (569ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (111.0 KB). Loaded Objects now: 3836.
+Memory consumption went from 116.1 MB to 116.0 MB.
+Total: 2.478000 ms (FindLiveObjects: 0.199200 ms CreateObjectMapping: 0.078200 ms MarkObjects: 2.114000 ms  DeleteObjects: 0.085800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8954.904428 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.010237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.539329 seconds.
+  path: Assets/Packge
+  artifactKey: Guid(ea048579a5d67af43b7938cc186717b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packge using Guid(ea048579a5d67af43b7938cc186717b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe39c742fb8799299d5e5bc4632ffee9') in 0.006483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.789447 seconds.
+  path: Assets/temp
+  artifactKey: Guid(1eaca6ef059a71349a48d48738cceed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp using Guid(1eaca6ef059a71349a48d48738cceed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05139a84c9085bb1f82135a526f2869d') in 0.006309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.717693 seconds.
+  path: Assets/temp/foguete
+  artifactKey: Guid(c609266710d9a0a4aa4aed332af560f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete using Guid(c609266710d9a0a4aa4aed332af560f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad0c5850e95249d1fc4f70dfd35ff0c') in 0.006145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.072081 seconds.
+  path: Assets/temp/foguete/foguete.fbx
+  artifactKey: Guid(286086496e3bd6b40b3022a2311924a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/foguete.fbx using Guid(286086496e3bd6b40b3022a2311924a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '112d465e0fc0e4a7ca955cad9a3ae64c') in 0.356588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.833762 seconds.
+  path: Assets/temp/foguete/textures
+  artifactKey: Guid(80e9b8c81728e574bb43dde3b165a202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/textures using Guid(80e9b8c81728e574bb43dde3b165a202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c17ea9561b042324757a08eaadd3c6b') in 0.006146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.047664 seconds.
+  path: Assets/temp/foguete/textures/foguete_normal.png
+  artifactKey: Guid(58287d00fd821a648888d2c4515ab6b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/textures/foguete_normal.png using Guid(58287d00fd821a648888d2c4515ab6b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d895986557a5037e8f245545b189cf') in 0.033207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.536052 seconds.
+  path: Assets/temp/foguete/Materials
+  artifactKey: Guid(4b8f6fa5fa961464082d5bcb60be0b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/Materials using Guid(4b8f6fa5fa961464082d5bcb60be0b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842d2dc9d135192c87376db0f86febdc') in 0.006863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040506 seconds.
+  path: Assets/temp/foguete/Materials/foguete-foguete__foguete_rgba_png.mat
+  artifactKey: Guid(7f74dddf54b39cb4b8d3987f8cb2525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/Materials/foguete-foguete__foguete_rgba_png.mat using Guid(7f74dddf54b39cb4b8d3987f8cb2525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e497afb786321574ed874f547794c86c') in 0.137959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.297978 seconds.
+  path: Assets/temp/foguete/foguete Variant.prefab
+  artifactKey: Guid(e78bdedbbfeeef04796c06d9725ffd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/foguete Variant.prefab using Guid(e78bdedbbfeeef04796c06d9725ffd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7239b3e9d79e64fed12315c7b4a80298') in 0.015309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.080825 seconds.
+  path: Assets/temp/foguete/foguete.prefab
+  artifactKey: Guid(e690f48c1e85501459c44759fccd0dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/temp/foguete/foguete.prefab using Guid(e690f48c1e85501459c44759fccd0dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b78668dad389d2d5bf04bfe6dccaf2') in 0.010903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 665.890673 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(29dfb8425860e3e4f82ca77a4783e512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(29dfb8425860e3e4f82ca77a4783e512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45da4f203aafd4abd02ee5741419487') in 0.020108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.438115 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(e9f3edcf98ef83f41830433d5b215cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(e9f3edcf98ef83f41830433d5b215cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b23c983ffb9aa3dc0faff6f9352b656') in 0.006273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.026051 seconds.
+  path: Assets/Scripts/New Folder
+  artifactKey: Guid(75da9c77c9e62544f95a1ee9005ed88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/New Folder using Guid(75da9c77c9e62544f95a1ee9005ed88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a88a84df166249d24fa50d14e8c5f9d') in 0.006686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.204473 seconds.
+  path: Assets/Scripts/Foguete.cs
+  artifactKey: Guid(44b1260c1ab3b2b48afe442d23d91388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Foguete.cs using Guid(44b1260c1ab3b2b48afe442d23d91388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9f1ed1b1e08ef0ea2a84c4343d5a7a') in 0.017170 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003921 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\nomed\Documents\GitHub\GameJam-Narrativa\Foguete\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\nomed\Documents\GitHub\GameJam-Narrativa\Foguete\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Domain Reload Profiling:
+	ReloadAssembly (723ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (528ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3373 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (0.6 MB). Loaded Objects now: 3885.
+Memory consumption went from 121.8 MB to 121.2 MB.
+Total: 2.646500 ms (FindLiveObjects: 0.217400 ms CreateObjectMapping: 0.067800 ms MarkObjects: 2.142200 ms  DeleteObjects: 0.218400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
