@@ -10,7 +10,6 @@ public class Solid : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            print("alow");
             foguete.body.isKinematic = true;
         }
     }

@@ -32,10 +32,11 @@ public class Foguete : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        body.AddForce(transform.right + transform.up * valueUp);
+        //Vector3 vector3 = new Vector3(5,valueUp,0);
+        body.AddForce(transform.up * valueUp);
         if (primeiroEstagio.fristComp == true) 
         {
+            body.drag = valueDown;
             fire.Play();
         }
         if (timer.currentTimer >= 5.0 )
@@ -57,7 +58,7 @@ public class Foguete : MonoBehaviour
         fire.Stop();
         paraquedas.SetActive(true);
         valueUp = -valueUp * Time.deltaTime;
-        body.AddForce(transform.right + transform.up * 0);
+        body.AddForce( transform.up * 0);
         body.drag = valueDown;
     }
 }
