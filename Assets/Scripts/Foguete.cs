@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Foguete : MonoBehaviour
@@ -8,11 +9,13 @@ public class Foguete : MonoBehaviour
     public float valueUp;
     public float valueDown;
     public float maxHeight;
-    private Rigidbody body;
+    [HideInInspector]
+    public Rigidbody body;
     [Header("Timer")]
     public Timer timer;
-    [Header("Paraquedas")]
+    [Header("Anoter objs")]
     public GameObject paraquedas;
+    private PrimeiroEstagio primeiroEstagio;
     [Header("ParticleSystem")]
     public ParticleSystem fire;
 
@@ -20,21 +23,24 @@ public class Foguete : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        fire.Pause();
+        fire.Clear();
         body = GetComponent<Rigidbody>();
+        primeiroEstagio = GetComponentInChildren<PrimeiroEstagio>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        body.AddForce(transform.up * valueUp);
 
+        body.AddForce(transform.right + transform.up * valueUp);
+        if (primeiroEstagio.fristComp == true) 
+        {
+            fire.Play();
+        }
         if (timer.currentTimer >= 5.0 )
         {
-            paraquedas.SetActive(true);
-            valueUp = -valueDown * Time.deltaTime;
-            body.AddForce(transform.up * 0);
-            body.drag = valueDown;
-            
+            StopMove();
         }
 
         if (body.velocity.y < 0)
@@ -42,6 +48,16 @@ public class Foguete : MonoBehaviour
             
             maxHeight = body.velocity.y;
         }
+ 
+
     }
 
+    void StopMove() 
+    {
+        fire.Stop();
+        paraquedas.SetActive(true);
+        valueUp = -valueUp * Time.deltaTime;
+        body.AddForce(transform.right + transform.up * 0);
+        body.drag = valueDown;
+    }
 }
