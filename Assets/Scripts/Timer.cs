@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     [Header("Timer Senttings")]
+    [HideInInspector]
     public float currentTimer;
 
     // Start is called before the first frame update

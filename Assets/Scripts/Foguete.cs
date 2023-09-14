@@ -5,11 +5,16 @@ using UnityEngine;
 public class Foguete : MonoBehaviour
 {
     [Header("Rigidbody object")]
-    Rigidbody body;
     public float valueUp;
     public float valueDown;
+    public float maxHeight;
+    private Rigidbody body;
     [Header("Timer")]
     public Timer timer;
+    [Header("Paraquedas")]
+    public GameObject paraquedas;
+    [Header("ParticleSystem")]
+    public ParticleSystem fire;
 
 
     // Start is called before the first frame update
@@ -23,15 +28,20 @@ public class Foguete : MonoBehaviour
     {
         body.AddForce(transform.up * valueUp);
 
-
         if (timer.currentTimer >= 5.0 )
         {
-            valueUp = 0;
+            paraquedas.SetActive(true);
+            valueUp = -valueDown * Time.deltaTime;
             body.AddForce(transform.up * 0);
             body.drag = valueDown;
-
+            
         }
 
+        if (body.velocity.y < 0)
+        {
+            
+            maxHeight = body.velocity.y;
+        }
     }
 
 }
