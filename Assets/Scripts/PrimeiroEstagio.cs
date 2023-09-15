@@ -13,6 +13,7 @@ public class PrimeiroEstagio : MonoBehaviour
     public bool fristComp = false;
     [Header("Timer")]
     public Timer timer;
+
     void Start()
     {
         compRigdy = GetComponent<Rigidbody>();
@@ -21,6 +22,12 @@ public class PrimeiroEstagio : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (fristComp == false)
+        {
+            Vector3 vector3 = new Vector3(0, valueUp, 0);
+            compRigdy.AddForce(vector3);
+
+        }
 
         if (timer.currentTimer >= 2.5) 
         {
@@ -30,11 +37,10 @@ public class PrimeiroEstagio : MonoBehaviour
 
     void Separetion() 
     {
+
+        fristComp = true;
         fire.Pause();
         fire.Clear();
-        fristComp = true;
-        compRigdy.isKinematic = false;
         compRigdy.drag = valueDown;
-
     }
 }

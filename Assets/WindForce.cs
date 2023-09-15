@@ -14,8 +14,8 @@ public class WindForce : MonoBehaviour
         if (hitObj != null)
         {
             var rb = hitObj.GetComponent<Rigidbody>();
-            var dir = hitObj.transform.right;
-            rb.AddForce(dir * windForce);
+            var dir = new Vector3(windForce,0,0); ;
+            rb.AddForce(dir);
         }
     }
 }

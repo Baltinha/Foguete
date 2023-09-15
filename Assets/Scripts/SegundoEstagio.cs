@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Foguete : MonoBehaviour
+public class SegundoEstagio : MonoBehaviour
 {
     [Header("Rigidbody object")]
-    public float valueUp;
     public float valueDown;
     public float maxHeight;
+    private float valueUp;
     [HideInInspector]
     public Rigidbody body;
     [Header("Timer")]
     public Timer timer;
+    private bool noMove = true;
     [Header("Anoter objs")]
     public GameObject paraquedas;
-    private PrimeiroEstagio primeiroEstagio;
+    public PrimeiroEstagio primeiroEstagio;
+    public Transform newPosition;
     [Header("ParticleSystem")]
     public ParticleSystem fire;
 
@@ -26,19 +28,21 @@ public class Foguete : MonoBehaviour
         fire.Pause();
         fire.Clear();
         body = GetComponent<Rigidbody>();
-        primeiroEstagio = GetComponentInChildren<PrimeiroEstagio>();
+
+        valueUp = primeiroEstagio.valueUp;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 vector3 = new Vector3(0, valueUp, 0);
-        body.AddForce(vector3);
-        /*if (primeiroEstagio.fristComp == true) 
+        Vector3 vector3Inercia = new Vector3(0, valueUp,0);
+
+        if (primeiroEstagio.fristComp == true && noMove == true) 
         {
-            body.drag = valueDown;
+            body.isKinematic = false;
+            body.AddForce(vector3Inercia);
             fire.Play();
-        }*/
+        }
         if (timer.currentTimer >= 5.0 )
         {
             StopMove();
@@ -46,7 +50,6 @@ public class Foguete : MonoBehaviour
 
         if (body.velocity.y < 0)
         {
-            
             maxHeight = body.velocity.y;
         }
  
@@ -55,10 +58,19 @@ public class Foguete : MonoBehaviour
 
     void StopMove() 
     {
+        Vector3 giro = new Vector3 (0,10,0);
+        noMove = false;
         fire.Stop();
         paraquedas.SetActive(true);
-        valueUp = -valueUp * Time.deltaTime;
-        body.AddForce( transform.up * 0);
         body.drag = valueDown;
+        //body.AddRelativeTorque(giro);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ground"))
+        {
+           body.isKinematic = true;
+        }
     }
 }
