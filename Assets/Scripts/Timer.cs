@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!stopTime)
+        if (stopTime)
         {
             currentTimer += Time.deltaTime;
             timerText.text = currentTimer.ToString("0.0");

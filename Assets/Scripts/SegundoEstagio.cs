@@ -68,17 +68,26 @@ public class SegundoEstagio : MonoBehaviour
 
     void StopMove() 
     {
-        fire.Stop();
-        Vector3 giro = new Vector3 (0,10,0);
-        noMove = false;
-        primeiroEstagio.somFoguete.Stop();
-        paraquedas.SetActive(true);
-        body.drag = valueDown;
-        cameraTrasforme.SetParent(null);
-        this.transform.SetParent(null);
-        this.transform.rotation = Quaternion.Euler((float)-88.72, (float)-88.404, (float)-192.914);
-        cameraTrasforme.SetParent(this.transform);
+        if (!body.isKinematic) 
+        {
+            fire.Stop();
+            Vector3 giro = new Vector3(0, 10, 0);
+            noMove = false;
+            primeiroEstagio.somFoguete.Stop();
+            paraquedas.SetActive(true);
+            body.drag = valueDown;
+            cameraTrasforme.SetParent(null);
+            this.transform.SetParent(null);
+            this.transform.rotation = Quaternion.Euler((float)-88.72, (float)-88.404, (float)-192.914);
+            cameraTrasforme.SetParent(this.transform);
+        }
 
+        if (body.isKinematic == true) 
+        {
+            cameraTrasforme.SetParent(null);
+            this.transform.rotation = Quaternion.Lerp(Quaternion.Euler((float)-88.72, (float)-88.404, (float)-192.914), Quaternion.Euler((float)-157.705, (float)269.962, (float)-191.304), 0.9f);
+            cameraTrasforme.SetParent(this.transform);
+        }
     }
     #endregion
     #region Ontrigger
@@ -87,7 +96,7 @@ public class SegundoEstagio : MonoBehaviour
         if (other.CompareTag("Ground"))
         {
            body.isKinematic = true;
-           timer.stopTime = true;
+           timer.stopTime = false;
         }
     }
     #endregion
