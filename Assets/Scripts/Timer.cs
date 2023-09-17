@@ -11,13 +11,20 @@ public class Timer : MonoBehaviour
     [Header("Timer Senttings")]
     [HideInInspector]
     public float currentTimer;
+    [HideInInspector]
+    public bool stopTime = true;
 
  
 
     // Update is called once per frame
     void Update()
     {
-        currentTimer += Time.deltaTime;
-        timerText.text = currentTimer.ToString("0.0");
+        if (!stopTime)
+        {
+            currentTimer += Time.deltaTime;
+            timerText.text = currentTimer.ToString("0.0");
+        }
     }
+
+    
 }
