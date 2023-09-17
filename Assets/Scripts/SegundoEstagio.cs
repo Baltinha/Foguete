@@ -20,6 +20,7 @@ public class SegundoEstagio : MonoBehaviour
     public GameObject paraquedas;
     public PrimeiroEstagio primeiroEstagio;
     public Transform cameraTrasforme;
+    private AudioSource somFoguete;
 
     [Header("ParticleSystem")]
     public ParticleSystem fire;
@@ -31,6 +32,7 @@ public class SegundoEstagio : MonoBehaviour
         fire.Pause();
         fire.Clear();
         body = GetComponent<Rigidbody>();
+        somFoguete = GetComponent<AudioSource>();
         valueUp = primeiroEstagio.valueUp;
     }
 
@@ -66,9 +68,9 @@ public class SegundoEstagio : MonoBehaviour
 
     void StopMove() 
     {
+        fire.Stop();
         Vector3 giro = new Vector3 (0,10,0);
         noMove = false;
-        fire.Stop();
         primeiroEstagio.somFoguete.Stop();
         paraquedas.SetActive(true);
         body.drag = valueDown;
